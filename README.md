@@ -1,8 +1,8 @@
-# <div align='center'>PouCode</div>
+# <div align='center'>Rexzy Official</div>
 
 <p align="center">
 
-  <img src="https://files.catbox.moe/i497x5.jpg" width="180" alt="Pou"/>
+  <img src="https://files.catbox.moe/lwkmh0.jpg" width="180" alt="Rexzy"/>
 
 </p>
 
