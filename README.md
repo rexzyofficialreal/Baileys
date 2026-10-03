@@ -274,20 +274,7 @@ await client.sendText(m.chat, "Hello!", {
 ```javascript
 await client.sendImage(m.chat, { url: "./pouimg.jpg" }, "Caption", {
   contextInfo: {
-    mentionedJid: [m.chat]
-  }
-}, {
-  key: {
-    remoteJid: "status@broadcast",
-    participant: m.sender,
-    fromMe: true
-  },
-  message: {
-    conversation: "\0"
-  }
-});
-```
-
+    mentionedJid: [
 ## Send video
 ```javascript
 await client.sendVideo(m.chat, { url: "./video.mp4" }, "Caption", {
@@ -377,30 +364,3 @@ await client.sendQuiz(m.chat, "Quiz question", ["1", "2", "3"], "2", {
   }
 });
 ```
-
-## Send status mention
-```javascript
-await client.statusMention(m.chat, {
-  extendedTextMessage: {
-    text: "Mentioned in status"
-  }
-});
-```
-
----
-
-# Credits
-
-PouCode is a fork of [Baileys](https://github.com/WhiskeySockets/Baileys), originally created by
-[Adhiraj Singh](https://github.com/adiwajshing) and maintained by the WhiskeySockets community.
-All credit for the underlying protocol implementation goes to the original authors and contributors.
-See [LICENSE](LICENSE) for the full license text and copyright notices.
-
-# Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on reporting issues and submitting pull requests.
-
-# Disclaimer
-
-This is **not** an official WhatsApp product. Use of this library to send bulk or unsolicited messages
-may violate WhatsApp's Terms of Service and can result in your number being banned. Use responsibly.
