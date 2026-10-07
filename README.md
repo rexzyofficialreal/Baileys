@@ -3,7 +3,7 @@
 ## usage
 ```
 "depencies": {
-  "@whiskeysockets/baileys": "npm:rexzyofficial"
+  "@whiskeysockets/baileys": "github:rexzyofficialreal/Baileys"
 }
 ```
 ## Import
@@ -26,7 +26,7 @@ const {
 } = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
-  browser: Browsers.poucode('Chrome'),
+  browser: Browsers.rexzyofficial('Chrome'),
   printQRInTerminal: true
 });
 ```
@@ -40,7 +40,7 @@ const {
 } = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
-  browser: Browsers.poucode('Chrome'),
+  browser: Browsers.rexzyofficial('Chrome'),
   printQRInTerminal: false,
   version: await fetchLatestWAWebVersion(),
   aiLabel: false // set true to show an AI label on messages sent by the bot
